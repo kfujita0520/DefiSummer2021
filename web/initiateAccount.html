@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Initiate Escrow Account</title>
+</head>
+<body>
+
+  <h1>Escrow App</h1>
+
+  <div class="asset-interface">
+    <div class="row2">
+      <button id="enable-button">Connect Wallet</button>
+      <span id="wallet-addr" class="pubkey">Your wallet address</span>
+    </div>
+  </div>
+
+  <div class="asset-interface">
+    <div class="row1">
+      <h3>Initiate Escrow</h3>
+    </div>
+    <div class="row2">
+      <span id="source-acc-desc" class="attr-name">Source Account</span>
+      <input id="source-acc" type="text" placeholder="Source Account" style="width: 350px"/>
+
+    </div>
+    <div class="row3">
+      <span id="dest-acc-desc" class="attr-name">Destination Account</span>
+      <input id="dest-acc" type="text" placeholder="Destination Account" style="width: 350px"/>
+    </div>
+    <div class="row4">
+      <button id="initiate-escrow-button">Initiate Escrow</button>
+    </div>
+    <div class="row5">
+      <span id="escrow-acc-desc" class="attr-name">Escrow Account</span>
+      <h4 id = "escrow_acc" class="pubkey"></h4>
+    </div>
+
+
+  </div>
+
+  <button class="link-button"><a href="./ProcessTransaction.html">Process Transaction</a></button>
+
+
+
+</body>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stellar-freighter-api/1.1.2/index.min.js"></script>
+<script type="text/javascript" src="./js/escrow.js"></script>
+
+
+</html>

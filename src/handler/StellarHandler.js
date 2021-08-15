@@ -3,7 +3,7 @@
  */
 const StellarSdk = require("stellar-sdk");
 const dotenv = require('dotenv');
-const {TransactionBuilder} = require("stellar-sdk");
+const {TransactionBuilder, Keypair} = require("stellar-sdk");
 
 class StellarHandler {
 
