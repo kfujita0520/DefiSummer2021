@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Process Escrow Transaction</title>
+</head>
+<body>
+
+<h1>Escrow App</h1>
+
+
+<div class="asset-interface">
+
+  <div class="row2">
+    <span id="wallet-label" class="attr-name">Your Wallet</span>
+    <br />
+    <span class="pubkey" id="wallet-address" style="overflow-wrap: anywhere"></span>
+  </div>
+  <div class="row3">
+    <span id="operationID-label" class="attr-name">Operation ID</span>
+    <input id="operationID" type="text" placeholder="Operation ID" style="width: 100px"/>
+  </div>
+  <div class="row4">
+    <button id="escrow-info-button" disabled>Fetch Escrow Info</button>
+  </div>
+
+</div>
+
+
+<div class="asset-interface">
+  <div class="row1">
+    <h3>Process Escrow</h3>
+  </div>
+  <div class="row2">
+    <span id="source-acc-desc" class="attr-name">Source Account</span>
+    <span id="source-acc" class="pubkey"></span>
+  </div>
+  <div class="row3">
+    <span id="dest-acc-desc" class="attr-name">Destination Account</span>
+    <span id="dest-acc" class="pubkey"></span>
+  </div>
+  <div class="row4">
+    <span id="amount-desc" class="attr-name">Amount</span>
+    <br />
+    <span id="amount"></span>
+  </div>
+  <div class="row5">
+    <button id="payment-button" disabled>Payment</button>
+    <button id="refund-button" disabled>Refund</button>
+  </div>
+
+
+</div>
+
+<button class="link-button"><a href="./initiateAccount.html">Go Back</a></button>
+
+
+
+</body>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stellar-freighter-api/1.1.2/index.min.js"></script>
+<script type="text/javascript" src="./js/escrow2.js"></script>
+
+
+</html>
